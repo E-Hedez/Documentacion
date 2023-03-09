@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+        <head>
+            <meta charset="utf-8"/>
+            <title>Huerto Vertical pagina WEB</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+            <link rel="icon" href="data:,">
+            <style>
+                *{
+                margin: 0;
+                }
+                #webpage{
+                background: #61be8d;
+                padding: 18px;
+                }
+                #cabecera{
+                padding: 15px;
+                background: #255C4B;
+                color: white;
+                text-align: center;
+                font-family: cursive;
+                }
+                nav{
+                    background: #3E9C80;
+                }
+                #navegacion{
+                column-count:3;
+                column-gap:18px;
+                column-rule:4px dotted #255C4B;
+                font-family: cursive;
+                text-align: center;
+                }
+                #navegacion li{
+                list-style: none;
+                padding: 15px;
+                font: bold 15px verdana;
+                color: rgb(213, 229, 225);
+                }
+                #Sensores{
+                background: #4EC29F;
+                column-count:3;
+                column-gap:20px;
+                column-rule:4px dotted black;
+                text-align: center;
+                }
+                .columna{
+                    padding:20px;
+                }
+                .Title{
+                    padding:13px;
+                }
+                p{
+                    padding:8px;
+                }
+                #tanque{
+                padding:10px;
+                background: #3e987d;
+                column-count:3;
+                column-gap:20px;
+                column-rule:4px dotted #255546;
+                font-family: cursive;
+                text-align: center;
+                }
+                .nivel, .nivel2{
+                padding:16px;
+                }
+                .nivel2{
+                 color: rgb(232, 227, 227);
+                }
+                .button{ 
+                background-color: #4CAF50; 
+                border: none; 
+                color: rgb(181, 213, 200); 
+                padding: 5px 30px;
+                text-decoration: none; 
+                font-size: 30px; 
+                margin: 2px; 
+                cursor: pointer;
+                }
+                .button2{
+                    background-color: #315d39;
+                }
+            </style>
+            <script type="text/javascript">
+                function actualizar(){location.reload(true);}
+                //Función para actualizar cada 5 segundos(5000 milisegundos)
+                setInterval("actualizar()",2000);
+            </script>
+        </head>
+    <body>
+
+        <div id="webpage">
+            <header id="cabecera">
+                <h1> Sistema de monitorización del Huerto </h1>
+            </header>
+            <nav id="navegacion">
+                <ul>
+                    <li>Primera Columna</li>
+                    <li>Segunda Columna</li>
+                    <li>Tercera Columna</li>
+                </ul>
+            </nav>
+
+            <section id="Sensores">
+                <article class="columna">
+                    <h1 class="Title">Sensor de temperatura y humedad de la columna 1</h1>
+                    <p>
+                        Temperature: 25.00 °C
+                    </p>
+                    <p>
+                        Humidity: 65.00 %
+                    </p>
+
+                    <h1 class="Title">Primer sensor de humedad de la columna 1</h1>
+                    <p>
+                        Humidity: 86.00 %
+                    </p>
+                    <h1 class="Title">Segundo sensor de humedad de la columna 1</h1>
+                    <p>
+                        Humidity: 89.00 %
+                    </p>
+
+                </article>
+
+                <article class="columna">
+                    <h1 class="Title">Sensor de temperatura y humedad de la columna 2</h1>
+                    <p>
+                        Temperature: 26.00 °C
+                    </p>
+                    <p>
+                        Humidity: 63.00 %
+                    </p>
+
+                    <h1 class="Title">Primer sensor de humedad de la columna 2</h1>
+                    <p>
+                        Humidity: 86.00 %
+                    </p>
+                    <h1 class="Title">Segundo sensor de humedad de la columna 2</h1>
+                    <p>
+                        Humidity: 80.00 %
+                    </p>
+
+                </article>
+
+                <article class="columna">
+                    <h1 class="Title">Sensor de temperatura y humedad de la columna 3</h1>
+                    <p>
+                        Temperature: 28.00 °C
+                    </p>
+                    <p>
+                        Humidity: 65.00 %
+                    </p>
+
+                    <h1 class="Title">Primer sensor de humedad de la columna 3</h1>
+                    <p>
+                        Humidity: 84.00 %
+                    </p>
+                    <h1 class="Title">Segundo sensor de humedad de la columna 3</h1>
+                    <p>
+                        Humidity: 76.00 %
+                    </p>
+
+                </article>
+            </section>
+                
+            <section id="tanque">
+                <h1 class="nivel2">Medidor de nivel del tanque </h1>
+                <p class="nivel">
+                    Nivel del Tanque: 92.00 %
+                </p>
+                <article>
+                    <p>
+                        <a href="/5/on"><button class="button">ON</button></a>
+                    </p>
+                </article>
+
+            </section>
+            
+        </div>
+    </body>
+</html>
